@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Название проекта</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img src="./images/logo.svg" width="33px" height="38px" alt="Логотип Кэт Энерджи">
+    </a>
+    <a class="main-header__logo-additional">
+      <img src="./images/logo-additional.svg" width="101px" height="18px" alt="Дополнительный логотип Кэт Энерджи">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    </nav>
+  </header>
+
+  <main class="main-container">
+
+    <section class="hero">
+      <div class="hero__wrapper">
+        <h1 class="hero__heading">Функциональное питание для котов</h1>
+        <span class="hero__slogan">Занялся собой? Займись котом!</span>
+        <img src="./images/hero-can-picture.png" width="280px" height="270px" alt="Банка с питание для котов">
+        <a class="button--primary" href="form.html">Подобрать программу</a>
+      </div>
+    </section>
+
+    <section class="programs">
+      <h2 class="visually-hidden">Программы питания для кошек</h2>
+      <div class="programs__wrapper">
+        <div class="programs__losing-weight">
+          <h3 class="losing-weight__title">Похудение</h3>
+          <p class="losing-weight__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+            Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+        </div>
+        <div class="programs__weight-gain">
+
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
