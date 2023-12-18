@@ -5,13 +5,23 @@
   <meta charset="UTF-8">
   <title>Подбор программы Cat Energy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="./favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest"> <!-- 180×180 -->
 </head>
 
 <body class="catalog-page">
   <header class="main-header">
     <div class="container">
       <a class="main-header__logo" href="index.html">
-        <img src="./images/logo.svg" width="33" height="38" alt="Иконка Кэт Энерджи.">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/header-icon-desktop.svg" width="70"
+            height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/header-icon-tablet.svg" width="60"
+            height="50">
+          <img src="./images/logo.svg" width="33" height="38" alt="Иконка Кэт Энерджи.">
+        </picture>
         <img src="./images/logo-additional.svg" width="101" height="18" alt="Логотип Кэт Энерджи.">
       </a>
       <nav class="main-header__nav">
@@ -39,8 +49,12 @@
         <ul class="catalog__list">
           <li class="catalog__card">
             <a class="catalog__card-link" href="#">
-              <img class="catalog__card-image" src="./images/catalog-image-1.png" width="68" height="86"
-                alt="Картинка товара.">
+              <picture>
+                <source width="161" height="172" type="image/png" media="(min-width: 1440px)" srcset="./images/catalog-image-1@1x.png 1x, ./images/catalog-image-1@2x.png 2x">
+                <source width="161" height="172" type="image/png" media="(min-width: 768px)" srcset="./images/catalog-image-1@1x.png 1x, ./images/catalog-image-1@2x.png 2x">
+                <img class="catalog__card-image" src="./images/catalog-image-1@1x.png"
+                  srcset="./images/catalog-image-1@2x.png 2x" width="68" height="86" alt="Картинка товара.">
+              </picture>
               <h3 class="catalog__card-title">Cat Energy PRO 500 г</h3>
             </a>
             <dl class="catalog__characteristics-list">
@@ -61,8 +75,12 @@
           </li>
           <li class="catalog__card">
             <a class="catalog__card-link" href="#">
-              <img class="catalog__card-image" src="./images/catalog-image-2.png" width="84" height="100"
-                alt="Картинка товара.">
+              <picture>
+                <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="./images/catalog-image-2@1x.png 1x, ./images/catalog-image-2@2x.png 2x">
+                <source width="168" height="206" type="image/png" media="(min-width: 768px)" srcset="./images/catalog-image-2@1x.png 1x, ./images/catalog-image-2@2x.png 2x">
+                <img class="catalog__card-image" src="./images/catalog-image-2@1x.png"
+                  srcset="./images/catalog-image-2@2x.png 2x" width="84" height="100" alt="Картинка товара.">
+              </picture>
               <h3 class="catalog__card-title">Cat Energy PRO 1000 г</h3>
             </a>
             <dl class="catalog__characteristics-list">
@@ -83,8 +101,12 @@
           </li>
           <li class="catalog__card">
             <a class="catalog__card-link" href="#">
-              <img class="catalog__card-image" src="./images/catalog-image-3.png" width="68" height="78"
-                alt="Картинка товара.">
+              <picture>
+                <source width="163" height="174" type="image/png" media="(min-width: 1440px)" srcset="./images/catalog-image-3@1x.png 1x, ./images/catalog-image-3@2x.png 2x">
+                <source width="163" height="174" type="image/png" media="(min-width: 768px)" srcset="./images/catalog-image-3@1x.png 1x, ./images/catalog-image-3@2x.png 2x">
+                <img class="catalog__card-image" src="./images/catalog-image-3@1x.png"
+                  srcset="./images/catalog-image-3@2x.png 2x" width="68" height="78" alt="Картинка товара.">
+              </picture>
               <h3 class="catalog__card-title">Cat Energy PRO 500 г</h3>
             </a>
             <dl class="catalog__characteristics-list">
@@ -105,8 +127,12 @@
           </li>
           <li class="catalog__card">
             <a class="catalog__card-link" href="#">
-              <img class="catalog__card-image" src="./images/catalog-image-4.png" width="84" height="100"
-                alt="Картинка товара.">
+              <picture>
+                <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="./images/catalog-image-4@1x.png 1x, ./images/catalog-image-4@2x.png 2x">
+                <source width="168" height="200" type="image/png" media="(min-width: 768px)" srcset="./images/catalog-image-4@1x.png 1x, ./images/catalog-image-4@2x.png 2x">
+                <img class="catalog__card-image" src="./images/catalog-image-4@1x.png"
+                  srcset="./images/catalog-image-4@2x.png 2x" width="84" height="100" alt="Картинка товара.">
+              </picture>
               <h3 class="catalog__card-title">Cat Energy PRO 1000 г</h3>
             </a>
             <dl class="catalog__characteristics-list">
@@ -127,8 +153,12 @@
           </li>
           <li class="catalog__card">
             <a class="catalog__card-link" href="#">
-              <img class="catalog__card-image" src="./images/catalog-image-5.png" width="68" height="78"
-                alt="Картинка товара.">
+              <picture>
+                <source width="161" height="171" type="image/png" media="(min-width: 1440px)" srcset="./images/catalog-image-5@1x.png 1x, ./images/catalog-image-5@2x.png 2x">
+                <source width="161" height="171" type="image/png" media="(min-width: 768px)" srcset="./images/catalog-image-5@1x.png 1x, ./images/catalog-image-5@2x.png 2x">
+                <img class="catalog__card-image" src="./images/catalog-image-5@1x.png"
+                  srcset="./images/catalog-image-5@2x.png 2x" width="68" height="78" alt="Картинка товара.">
+              </picture>
               <h3 class="catalog__card-title">Cat Energy SLIM 500 г</h3>
             </a>
             <dl class="catalog__characteristics-list">
@@ -149,8 +179,12 @@
           </li>
           <li class="catalog__card">
             <a class="catalog__card-link" href="#">
-              <img class="catalog__card-image" src="./images/catalog-image-6.png" width="84" height="100"
-                alt="Картинка товара.">
+              <picture>
+                <source width="172" height="196" type="image/png" media="(min-width: 1440px)" srcset="./images/catalog-image-6@1x.png 1x, ./images/catalog-image-6@2x.png 2x">
+                <source width="168" height="200" type="image/png" media="(min-width: 768px)" srcset="./images/catalog-image-6@1x.png 1x, ./images/catalog-image-6@2x.png 2x">
+                <img class="catalog__card-image" src="./images/catalog-image-6@1x.png"
+                  srcset="./images/catalog-image-6@2x.png 2x" width="84" height="100" alt="Картинка товара.">
+              </picture>
               <h3 class="catalog__card-title">Cat Energy SLIM 1000 г</h3>
             </a>
             <dl class="catalog__characteristics-list">
@@ -171,8 +205,12 @@
           </li>
           <li class="catalog__card">
             <a class="catalog__card-link" href="#">
-              <img class="catalog__card-image" src="./images/catalog-image-7.png" width="72" height="84"
-                alt="Картинка товара.">
+              <picture>
+                <source width="163" height="174" type="image/png" media="(min-width: 1440px)" srcset="./images/catalog-image-7@1x.png 1x, ./images/catalog-image-7@2x.png 2x">
+                <source width="163" height="174" type="image/png" media="(min-width: 768px)" srcset="./images/catalog-image-7@1x.png 1x, ./images/catalog-image-7@2x.png 2x">
+                <img class="catalog__card-image" src="./images/catalog-image-7@1x.png"
+                  srcset="./images/catalog-image-7@2x.png 2x" width="72" height="84" alt="Картинка товара.">
+              </picture>
               <h3 class="catalog__card-title">Cat Energy SLIM 500 г</h3>
             </a>
             <dl class="catalog__characteristics-list">
