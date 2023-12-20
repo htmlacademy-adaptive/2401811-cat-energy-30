@@ -1,7 +1,8 @@
 /* GLOBAL */
 @import "./global/variables.scss";
-@import "./global/global.scss";
+@import "./global/common.scss";
 @import "./global/fonts.scss";
+@import "./global/visually-hidden.scss";
 
 /* BLOCKS */
 @import "./blocks/home-page.scss";
@@ -15,7 +16,6 @@
 @import "./blocks/main-container.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/programs.scss";
-@import "./blocks/option-list.scss";
 @import "./blocks/features.scss";
 @import "./blocks/example.scss";
 @import "./blocks/slider.scss";
@@ -25,3 +25,5 @@
 @import "./blocks/program-selection.scss";
 @import "./blocks/cat-information.scss";
 @import "./blocks/user-contact.scss";
+@import "./blocks/comment.scss";
+@import "./blocks/additional.scss";
