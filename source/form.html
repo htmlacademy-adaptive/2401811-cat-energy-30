@@ -3,30 +3,42 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Подбор программы Cat Energy</title>
+  <title>Подбор программы CAT ENERGY</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="./favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest"><!-- 180×180 -->
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body class="form-page">
+
   <header class="main-header">
     <div class="container">
-      <a class="main-header__logo" href="index.html">
-        <img src="./images/logo.svg" width="33" height="38" alt="Иконка Кэт Энерджи.">
-        <img src="./images/logo-additional.svg" width="101" height="18" alt="Логотип Кэт Энерджи.">
+      <a class="main-header__logo logo" href="index.html" aria-current="page">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/header-icon-desktop.svg" width="70"
+            height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/header-icon-tablet.svg" width="60"
+            height="50">
+          <img class="logo__icon" src="./images/logo.svg" width="33" height="38" alt="Иконка Кэт Энерджи.">
+        </picture>
+        <img class="logo__image" src="./images/logo-additional.svg" width="101" height="18" alt="Логотип Кэт Энерджи.">
       </a>
-      <nav class="main-header__nav">
-        <ul class="main-header__list">
-          <li class="main-header__item">
-            <a class="main-header__link" href="index.html">главная</a>
+      <nav class="main-header__nav navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html">главная</a>
           </li>
-          <li class="main-header__item">
-            <a class="main-header__link" href="catalog.html">каталог продукции</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">каталог продукции</a>
           </li>
-          <li class="main-header__item">
-            <a class="main-header__link" href="form.html" aria-current="page">подбор программы</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html" aria-current="page">подбор программы</a>
           </li>
         </ul>
-        <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </nav>
     </div>
   </header>

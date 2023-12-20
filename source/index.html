@@ -3,32 +3,43 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Название проекта</title>
+  <title>CAT ENERGY</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="./favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest"><!-- 180×180 -->
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="home-page">
+
   <header class="main-header">
     <div class="container">
-      <a class="main-header__logo" href="index.html" aria-current="page">
-        <img src="./images/logo.svg" width="33" height="38" alt="Иконка Кэт Энерджи.">
-        <img src="./images/logo-additional.svg" width="101" height="18" alt="Логотип Кэт Энерджи.">
+      <a class="main-header__logo logo" href="index.html" aria-current="page">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/header-icon-desktop.svg" width="70"
+            height="59">
+          <source type="image/svg+xml" media="(min-width: 768px)" srcset="./images/header-icon-tablet.svg" width="60"
+            height="50">
+          <img class="logo__icon" src="./images/logo.svg" width="33" height="38" alt="Иконка Кэт Энерджи.">
+        </picture>
+        <img class="logo__image" src="./images/logo-additional.svg" width="101" height="18" alt="Логотип Кэт Энерджи.">
       </a>
-      <nav class="main-header__nav">
-        <ul class="main-header__list">
-          <li class="main-header__item">
-            <a class="main-header__link" href="index.html" aria-current="page">главная</a>
+      <nav class="main-header__nav navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="index.html" aria-current="page">главная</a>
           </li>
-          <li class="main-header__item">
-            <a class="main-header__link" href="catalog.html">каталог продукции</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="catalog.html">каталог продукции</a>
           </li>
-          <li class="main-header__item">
-            <a class="main-header__link" href="form.html">подбор программы</a>
+          <li class="navigation__item">
+            <a class="navigation__link" href="form.html">подбор программы</a>
           </li>
         </ul>
-        <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </nav>
     </div>
   </header>
@@ -39,7 +50,14 @@
       <div class="container">
         <h1 class="hero__heading">Функциональное питание для котов</h1>
         <span class="hero__slogan">Занялся собой? Займись котом!</span>
-        <img src="./images/hero-can-picture.png" width="280" height="270" alt="Банка с питание для котов.">
+        <picture>
+          <source type="image/png" media="(min-width: 1440px)"
+            srcset="./images/hero-can-desktop@1x.png 1x, ./images/hero-can-desktop@2x.png 2x" width="552" height="499">
+          <source type="image/png" media="(min-width: 768px)"
+            srcset="./images/hero-can-tablet@1x.png 1x, ./images/hero-can-tablet@2x.png 2x" width="709" height="609">
+          <img class="hero__image" src="./images/hero-can-mobile@1x.png" width="280" height="270"
+            alt="Банка с питание для котов." srcset="./images/hero-can-mobile@2x.png 2x">
+        </picture>
         <a class="hero__button button button--primary" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -50,11 +68,13 @@
         <ul class="programs__list">
           <li class="programs__item programs__item--losing-weight">
             <h3 class="programs__title">Похудение</h3>
-            <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+            <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по
+              деревьям?
               Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
             <a class="programs__link" href="catalog.html">
               <span class="programs__link-text">каталог slim</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="12" viewBox="0 0 32 12" fill="none">
+              <svg class="programs__vector" xmlns="http://www.w3.org/2000/svg" width="32" height="12"
+                viewBox="0 0 32 12" fill="none">
                 <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
                 <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
               </svg>
@@ -66,7 +86,8 @@
               Pro поможет вашему коту нарастить необходимые мышцы!</p>
             <a class="programs__link" href="catalog.html">
               <span class="programs__link-text">каталог pro</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="12" viewBox="0 0 32 12" fill="none">
+              <svg class="programs__vector" xmlns="http://www.w3.org/2000/svg" width="32" height="12"
+                viewBox="0 0 32 12" fill="none">
                 <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
                 <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
               </svg>
@@ -114,9 +135,16 @@
           </div>
         </dl>
         <span class="example__costs">Затраты на питание: 15 000 руб.</span>
-        <div class="slider">
+        <div class="example__sliider slider">
           <div class="slider__bar">
-            <img width="280" height="256" src="./images/compare-slider.png" alt="Сравнение кошки до и после питания.">
+            <picture>
+              <source width="560" height="512" media="(min-width: 1440px)"
+                srcset="./images/compare-slider-desktop@1x.png 1x, images/compare-slider-desktop@2x.png 2x" type="image/png">
+              <source width="560" height="512" media="(min-width: 768px)"
+                srcset="./images/compare-slider-tablet@1x.png 1x, images/compare-slider-tablet@2x.png 2x" type="image/png">
+              <img width="280" height="256" src="./images/compare-slider-mobile@1x.png"
+                alt="Сравнение кошки до и после питания." srcset="./images/compare-slider-mobile@2x.png 2x">
+            </picture>
             <button class="slider__toggle slider__toggle--back" type="button"><span class="visually-hidden">Кнопка
                 слайдера назад</span></button>
             <button class="slider__toggle slider__toggle--forward" type="button"><span class="visually-hidden">Кнопка
