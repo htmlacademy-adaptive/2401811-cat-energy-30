@@ -2,8 +2,16 @@
   box-sizing: border-box;
 }
 
-body {
+.home-page {
   font-family: "Oswald", "sans-serif";
+  color: $base-color-text;
+  font-weight: $font-weight-regular;
+  font-style: $font-style-normal;
+}
+
+.catalog-page {
+  font-family: "Lato", "sans-serif";
+  color: $additional-color-text;
 }
 
 a {
