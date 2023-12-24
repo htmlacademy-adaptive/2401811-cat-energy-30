@@ -1,1 +1,15 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oswald", "sans-serif";
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
