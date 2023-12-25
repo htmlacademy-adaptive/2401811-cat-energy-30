@@ -1,4 +1,11 @@
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
 .navigation__link {
+  color: #000;
+  font-family: "Oswald", "sans-serif";
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -6,4 +13,6 @@
 
 .navigation__list {
   display: flex;
+  margin: 0;
+  padding: 0;
 }

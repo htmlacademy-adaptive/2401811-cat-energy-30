@@ -2,22 +2,14 @@
   box-sizing: border-box;
 }
 
-.home-page {
-  font-family: "Oswald", "sans-serif";
-  color: $base-color-text;
-  font-weight: $font-weight-regular;
-  font-style: $font-style-normal;
-}
-
-.catalog-page {
-  font-family: "Lato", "sans-serif";
-  color: $additional-color-text;
-}
-
 a {
   text-decoration: none;
 }
 
 ul {
   list-style-type: none;
+}
+
+fieldset {
+  border: none;
 }
