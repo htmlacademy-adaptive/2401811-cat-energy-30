@@ -1,0 +1,37 @@
+.cat-information__field-group {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.cat-information__control-list {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.cat-information__input {
+  height: 45px;
+  padding: 0;
+  border: 1px solid #CDCDCD;
+
+  &::-webkit-input-placeholder {
+    color: $additional-color-text;
+    font-family: "Oswald", "sans-serif";
+    font-size: 16px;
+    line-height: 18px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &::-moz-placeholder {
+    color: $additional-color-text;
+    font-family: "Oswald", "sans-serif";
+    font-size: 16px;
+    line-height: 18px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
