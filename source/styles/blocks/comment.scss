@@ -1,27 +1,16 @@
-.cat-information__field-group {
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-.cat-information__control-list {
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-.cat-information__input {
-  height: 45px;
+.comment__input {
+  width: 280px;
+  height: 150px;
   padding: 0;
-  border: 1px solid #cdcdcd;
+  resize: none;
 
   &::-webkit-input-placeholder {
     color: $additional-color-text;
     font-family: "Oswald", sans-serif;
     font-size: 16px;
-    line-height: 18px;
     font-style: normal;
     font-weight: 400;
+    line-height: 18px;
     text-transform: uppercase;
   }
 
@@ -29,9 +18,9 @@
     color: $additional-color-text;
     font-family: "Oswald", sans-serif;
     font-size: 16px;
-    line-height: 18px;
     font-style: normal;
     font-weight: 400;
+    line-height: 18px;
     text-transform: uppercase;
   }
 }

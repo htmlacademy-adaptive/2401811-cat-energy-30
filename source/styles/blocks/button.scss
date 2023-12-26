@@ -1,0 +1,22 @@
+.button {
+  width: 280px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button.button--primary {
+  background-color: #68b738;
+  color: #ffffff;
+}
+
+.button.button--secondary {
+  color: $additional-color-text;
+  background-color: #f2f2f2;
+}
