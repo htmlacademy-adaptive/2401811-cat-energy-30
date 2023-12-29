@@ -19,13 +19,50 @@
 }
 
 .main-footer__social-logo-image {
-  @include hover-footer-logo;
+  &:hover {
+    fill: #3e3e3e;
+  }
+
+  &:focus {
+    fill: #3e3e3e;
+  }
+
+  &:active {
+    fill: #6b6b6b;
+  }
 }
 
 .main-footer__social-icon {
-  @include hover-footer-icon;
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:focus {
+    fill: #68b738;
+  }
+
+  &:active {
+    fill: #68b738;
+    opacity: 0.3;
+  }
 }
 
 .main-footer__copyright-link {
-  @include hover-footer-copyright;
+  &:hover .main-footer__copyright-logo-text {
+    fill: #444444;
+  }
+
+  &:hover .main-footer__copyright-logo {
+    fill: #68b738;
+  }
+
+  &:active .main-footer__copyright-logo-text {
+    fill: #444444;
+    opacity: 0.3;
+  }
+
+  &:active .main-footer__copyright-logo {
+    fill: #68b738;
+    opacity: 0.3;
+  }
 }
