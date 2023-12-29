@@ -17,3 +17,15 @@
   display: flex;
   gap: 24px;
 }
+
+.main-footer__social-logo-image {
+  @include hover-footer-logo;
+}
+
+.main-footer__social-icon {
+  @include hover-footer-icon;
+}
+
+.main-footer__copyright-link {
+  @include hover-footer-copyright;
+}
