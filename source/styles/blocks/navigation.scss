@@ -14,5 +14,11 @@
 .navigation__list {
   margin: 0;
   padding: 0;
-  display: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navigation__toggle {
+  border: none;
+  background-color: transparent;
 }

@@ -4,6 +4,11 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  width: 140px;
+}
+
+.main-footer .container {
+  background-color: #f2f2f2;
 }
 
 .main-footer__contacts-address {
@@ -11,9 +16,112 @@
   font-family: "Lato", sans-serif;
   font-size: 14px;
   line-height: 20px;
+  margin: 0;
+  width: 140px;
+}
+
+.main-footer__bottom-footer {
+  padding: 40px 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-footer__social-list {
   display: flex;
   gap: 24px;
+  margin-bottom: 20px;
+}
+
+.main-footer__contacts {
+  padding: 26px 20px 26px 20px;
+  display: flex;
+  background-color: #f2f2f2;
+}
+
+.main-footer__social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-footer__social-logo::after {
+  content: url(" ");
+  background-image: url("../../images/icons/line-footer.svg");
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  height: 1px;
+  margin-bottom: 20px;
+  width: 280px;
+}
+
+.main-footer__copyright::before {
+  content: url(" ");
+  background-image: url("../../images/icons/line-footer.svg");
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  height: 1px;
+  margin-bottom: 20px;
+  width: 280px;
+}
+
+
+.main-footer__social-logo-image {
+  margin-bottom: 20px;
+  align-self: center;
+  position: relative;
+  left: 76px;
+
+  &:hover {
+    fill: #3e3e3e;
+  }
+
+  &:focus {
+    fill: #3e3e3e;
+  }
+
+  &:active {
+    fill: #6b6b6b;
+  }
+}
+
+.main-footer__social-icon {
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:focus {
+    fill: #68b738;
+  }
+
+  &:active {
+    fill: #68b738;
+    opacity: 0.3;
+  }
+}
+
+.main-footer__copyright-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover .main-footer__copyright-logo-text {
+    fill: #444444;
+  }
+
+  &:hover .main-footer__copyright-logo {
+    fill: #68b738;
+  }
+
+  &:active .main-footer__copyright-logo-text {
+    fill: #444444;
+    opacity: 0.3;
+  }
+
+  &:active .main-footer__copyright-logo {
+    fill: #68b738;
+    opacity: 0.3;
+  }
 }
