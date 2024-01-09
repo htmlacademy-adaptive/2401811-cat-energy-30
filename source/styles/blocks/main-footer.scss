@@ -7,6 +7,10 @@
   width: 140px;
 }
 
+.main-footer .container {
+  background-color: #f2f2f2;
+}
+
 .main-footer__contacts-address {
   color: $additional-color-text;
   font-family: "Lato", sans-serif;
@@ -32,6 +36,7 @@
 .main-footer__contacts {
   padding: 26px 20px 26px 20px;
   display: flex;
+  background-color: #f2f2f2;
 }
 
 .main-footer__social {

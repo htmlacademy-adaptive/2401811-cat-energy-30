@@ -8,6 +8,9 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
 }
 
 .cat-information__input {
