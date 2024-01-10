@@ -1,8 +1,11 @@
 .logo {
   display: flex;
   align-items: center;
+  gap: 56px;
 }
 
-.logo__icon {
-  margin-right: 56px;
+@media (min-width: 768px) {
+  .logo {
+    gap: 13px;
+  }
 }
