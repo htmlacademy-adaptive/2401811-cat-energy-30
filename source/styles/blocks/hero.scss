@@ -1,13 +1,30 @@
-.hero {
-  margin-bottom: 20px;
-}
-
 .hero__heading {
   font-size: 36px;
   line-height: 36px;
   text-align: center;
   margin: 0;
   margin-bottom: 25px;
+  box-sizing: content-box;
+
+  @media (min-width: 768px) {
+    text-align: start;
+    max-width: 416px;
+    height: 120px;
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 40px;
+    padding-left: 90px;
+    padding-top: 65px;
+  }
+}
+
+.hero__image {
+  margin-bottom: 3px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .hero__slogan {
@@ -17,4 +34,24 @@
   display: flex;
   justify-content: center;
   margin-bottom: 29px;
+
+  @media (min-width: 768px) {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    justify-content: flex-start;
+    padding-left: 90px;
+    margin-bottom: 21px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero__button {
+    position: absolute;
+    z-index: 5;
+    bottom: 186px;
+    width: 244px;
+    height: 54px;
+    left: 120px;
+  }
 }
