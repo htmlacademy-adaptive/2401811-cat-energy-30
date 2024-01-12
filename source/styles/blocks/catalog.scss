@@ -11,9 +11,35 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.catalog__card:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.catalog__card:last-child .catalog__card-title::before {
+  content: url(" ");
+  background-image: url("../../images/icons/plus.svg");
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
 }
 
 .catalog__characteristics-list {
   font-size: 12px;
+  margin: 0;
   line-height: 16px;
+}
+
+.catalog__characteristics-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__characteristics-value {
+  margin: 0;
 }

@@ -16,3 +16,20 @@
   padding: 0;
   display: none;
 }
+
+.navigation__toggle {
+  border: none;
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .navigation__toggle {
+    display: none;
+  }
+
+  .navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+  }
+}

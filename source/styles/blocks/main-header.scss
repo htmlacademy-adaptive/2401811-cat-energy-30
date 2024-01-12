@@ -1,4 +1,18 @@
 .main-header .container {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 14px;
+  padding-top: 13px;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    padding: 25px 34px 0 30px;
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-header__logo {
+    margin-right: 94px;
+  }
 }

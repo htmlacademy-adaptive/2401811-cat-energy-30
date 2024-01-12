@@ -16,6 +16,7 @@
 .additional-products__characteristics {
   font-size: 14px;
   line-height: 14px;
+  margin: 0;
 }
 
 .additional-products__banner {
@@ -24,4 +25,37 @@
   font-size: 16px;
   line-height: 20px;
   background-color: rgba(104, 183, 56, 0.85);
+  width: 280px;
+  height: 290px;
+  display: flex;
+
+  & > span {
+    align-self: flex-end;
+    padding-bottom: 43px;
+    padding-left: 58px;
+    padding-right: 61px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  & > span::before {
+    content: url(" ");
+    background-image: url("../../images/icons/icon-gift.svg");
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: 78px 80px;
+    width: 78px;
+    height: 80px;
+    align-self: center;
+  }
+}
+
+.additional-products__characteristics-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.additional-products__characteristics-price {
+  margin: 0;
 }
