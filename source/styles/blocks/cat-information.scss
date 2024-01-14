@@ -2,6 +2,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .cat-information__control-list {
@@ -11,12 +12,36 @@
   display: flex;
   flex-direction: column;
   gap: 13px;
+  border-top: 1px solid #d9d9d9;
+  padding: 22px 20px 19px 20px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.cat-information__control-item {
+  height: 30px;
+  align-items: center;
+  display: flex;
 }
 
 .cat-information__input {
   height: 45px;
   padding: 0;
   border: 1px solid #cdcdcd;
+
+  &.cat-information__input--name {
+    min-width: 228px;
+    margin-bottom: 14px;
+  }
+
+  &.cat-information__input--weight {
+    min-width: 206px;
+    margin-bottom: 14px;
+  }
+
+  &.cat-information__input--age {
+    min-width: 173px;
+    margin-bottom: 24px;
+  }
 
   &::-webkit-input-placeholder {
     color: $additional-color-text;
@@ -37,4 +62,8 @@
     font-weight: 400;
     text-transform: uppercase;
   }
+}
+
+.cat-information__label {
+  margin-right: 9px;
 }

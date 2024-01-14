@@ -20,6 +20,12 @@
 .navigation__toggle {
   border: none;
   background-color: transparent;
+  padding: 0;
+}
+
+.navigation__bars {
+  position: relative;
+  top: 3px;
 }
 
 @media (min-width: 768px) {

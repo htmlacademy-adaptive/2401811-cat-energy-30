@@ -2,12 +2,48 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
+  margin: 0;
+}
+
+.user-contact {
+  padding-bottom: 24px;
+}
+
+.user-contact__subtitle {
+  color: $base-color-text;
+  font-size: 24px;
+  line-height: 26px;
+  padding-top: 22px;
+  margin-bottom: 35px;
+}
+
+.user-contact__label {
+  margin-right: 9px;
+}
+
+.user-contact__icon {
+  position: absolute;
+  left: 268px;
+  top: 705px;
+
+  &.user-contact__icon--phone {
+    top: 765px;
+  }
 }
 
 .user-contact__input {
   height: 45px;
   padding: 0;
   border: 1px solid #cdcdcd;
+
+  &.user-contact__input--email {
+    min-width: 217px;
+    margin-bottom: 14px;
+  }
+
+  &.user-contact__input--phone {
+    min-width: 200px;
+  }
 
   &::-webkit-input-placeholder {
     color: $additional-color-text;
