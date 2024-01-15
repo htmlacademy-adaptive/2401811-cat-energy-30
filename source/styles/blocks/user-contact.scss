@@ -3,10 +3,20 @@
   font-size: 16px;
   line-height: 18px;
   margin: 0;
+
+  @media (min-width: 768px) {
+    padding-left: 40px;
+    font-size: 20px;
+    line-height: normal;
+  }
 }
 
 .user-contact {
   padding-bottom: 24px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 65px;
+  }
 }
 
 .user-contact__subtitle {
@@ -15,6 +25,14 @@
   line-height: 26px;
   padding-top: 22px;
   margin-bottom: 35px;
+
+  @media (min-width: 768px) {
+    padding-top: 65px;
+    padding-left: 40px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
 }
 
 .user-contact__label {
@@ -26,8 +44,17 @@
   left: 268px;
   top: 705px;
 
+  @media (min-width: 768px) {
+    left: 664px;
+    top: 1038px;
+  }
+
   &.user-contact__icon--phone {
     top: 765px;
+
+    @media (min-width: 768px) {
+      top: 1110px;
+    }
   }
 }
 
@@ -36,13 +63,26 @@
   padding: 0;
   border: 1px solid #cdcdcd;
 
+  @media (min-width: 768px) {
+    min-height: 52px;
+  }
+
   &.user-contact__input--email {
     min-width: 217px;
     margin-bottom: 14px;
+
+    @media (min-width: 768px) {
+      min-width: 552px;
+      margin-bottom: 20px;
+    }
   }
 
   &.user-contact__input--phone {
     min-width: 200px;
+
+    @media (min-width: 768px) {
+      min-width: 530px;
+    }
   }
 
   &::-webkit-input-placeholder {
@@ -53,6 +93,11 @@
     font-weight: 400;
     line-height: 18px;
     text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+      line-height: normal;
+    }
   }
 
   &::-moz-placeholder {
@@ -63,5 +108,10 @@
     font-weight: 400;
     line-height: 18px;
     text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+      line-height: normal;
+    }
   }
 }
