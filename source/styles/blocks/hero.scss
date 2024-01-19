@@ -5,6 +5,8 @@
   margin: 0;
   margin-bottom: 25px;
   box-sizing: content-box;
+  color: #ffffff;
+  padding-top: 27px;
 
   @media (min-width: 768px) {
     text-align: start;
@@ -19,6 +21,21 @@
   }
 }
 
+.hero::before {
+  content: "";
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-mobile.jpg");
+  width: 320px;
+  height: 302px;
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
 .hero__slogan {
   font-size: 14px;
   line-height: 14px;
@@ -26,6 +43,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 29px;
+  color: #ffffff;
 
   @media (min-width: 768px) {
     color: #000000;

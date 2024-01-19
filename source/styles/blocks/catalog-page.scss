@@ -5,3 +5,15 @@
   font-style: $font-style-normal;
   margin: 0;
 }
+
+.catalog-page .main-header {
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: 768px) {
+    border: none;
+  }
+}
+
+.catalog-page .main-footer__contacts {
+  background-color: #f2f2f2;
+}
