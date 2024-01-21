@@ -20,6 +20,7 @@
 
   @media (min-width: 768px) {
     padding-top: 70px;
+    padding-bottom: 75px;
   }
 }
 
@@ -114,7 +115,13 @@
   display: flex;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/image-banner.jpg");
 
-  & > span {
+  @media (min-width: 768px) {
+    min-width: 707px;
+    max-height: 200px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/image-banner-tablet.jpg");
+  }
+
+  &>span {
     align-self: flex-end;
     padding-bottom: 43px;
     padding-left: 58px;
@@ -122,9 +129,21 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      padding: 0;
+      gap: 264px;
+      align-self: center;
+      min-width: 707px;
+      padding-left: 77px;
+      padding-right: 125px;
+      text-align: start;
+      align-items: center;
+    }
   }
 
-  & > span::before {
+  &>span::before {
     content: url(" ");
     background-image: url("../../images/icons/icon-gift.svg");
     display: flex;
@@ -132,6 +151,10 @@
     width: 78px;
     height: 80px;
     align-self: center;
+
+    @media (min-width: 768px) {
+      width: 150px;
+    }
   }
 }
 
