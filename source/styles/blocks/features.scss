@@ -5,6 +5,11 @@
     padding: 45px 30px 47px 30px;
     border-bottom: 1px solid #e6e6e6;
   }
+
+  @media (min-width: 1440px) {
+    padding: 71px 0 0 0;
+    border: none;
+  }
 }
 
 .features__title {
@@ -31,6 +36,10 @@
     column-gap: 137px;
     row-gap: 37px;
   }
+
+  @media (min-width: 1440px) {
+    gap: 76px;
+  }
 }
 
 .features__item {
@@ -45,10 +54,14 @@
   justify-content: flex-end;
 
   @media (min-width: 768px) {
-    min-width: 248px;
+    width: 248px;
     justify-content: flex-start;
     min-height: 280px;
     position: relative;
+  }
+
+  @media (min-width: 1440px) {
+    min-width: 230px;
   }
 }
 

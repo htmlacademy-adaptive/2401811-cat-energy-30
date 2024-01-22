@@ -1,14 +1,15 @@
-.example .container {
+.example {
   background-color: #eaeaea;
   padding: 25px 20px 40px 20px;
 
   @media (min-width: 768px) {
     padding: 45px 30px 101px 30px;
-    background-color: #ffffff;
-    background-image: url("../../images/icons/grey-rectangle-tablet.svg");
-    background-size: 768px 462px;
-    background-repeat: no-repeat;
-    background-position: 0 619px;
+    background-image: linear-gradient(to top, #f2f2f2 462px, #ffffff 15%);
+  }
+
+  @media (min-width: 1440px) {
+    padding: 70px 110px 75px 110px;
+    background-image: linear-gradient(to top, #f2f2f2 462px, #ffffff 15%);
   }
 }
 
@@ -22,6 +23,10 @@
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 60px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 146px;
   }
 }
 
@@ -37,6 +42,11 @@
     min-height: 77px;
     margin-bottom: 99px;
   }
+
+  @media (min-width: 1440px) {
+    gap: 42px;
+    margin-bottom: 55px;
+  }
 }
 
 .example__text {
@@ -51,6 +61,11 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 55px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 436px;
+    margin-bottom: 69px;
   }
 }
 
@@ -101,7 +116,16 @@
     text-align: end;
     margin: 0;
     position: absolute;
-    bottom: -2249px;
+    bottom: -2051px;
+    display: block;
+  }
+
+  @media (min-width: 1440px) {
+    position: static;
+    width: 100%;
+    justify-content: flex-start;
+    display: flex;
+    gap: 63px;
   }
 }
 
@@ -129,6 +153,12 @@
 .example__slider {
   display: flex;
   justify-content: center;
+
+  @media (min-width: 1440px) {
+    position: absolute;
+    right: 110px;
+    top: 1663px;
+  }
 }
 
 .example__slider-bar {
