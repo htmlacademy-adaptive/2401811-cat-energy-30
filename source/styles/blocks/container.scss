@@ -8,4 +8,8 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+
+  @media (min-width: 1440px) {
+    padding: 0;
+  }
 }
