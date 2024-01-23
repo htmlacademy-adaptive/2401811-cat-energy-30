@@ -26,15 +26,25 @@
   }
 }
 
+.hero .container {
+  @media (min-width: 768px) {
+    height: 875px;
+  }
+}
+
 @media (min-width: 1440px) {
   .hero__image {
-    position: absolute;
-    top: 143px;
-    left: 557px;
+    position: relative;
+    bottom: 316px;
+    left: 447px;
   }
 
   .hero .container {
-    min-height: 582px;
+    height: 582px;
+  }
+
+  .hero {
+    position: relative;
   }
 }
 
@@ -55,10 +65,10 @@
   @media (min-width: 1440px) {
     background-image: linear-gradient(rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85)), url("../../images/index-background-desktop.jpg");
     width: 720px;
-    height: 694px;
+    height: 695px;
     display: flex;
     left: 720px;
-    bottom: 185px;
+    bottom: 0;
   }
 }
 
@@ -88,18 +98,22 @@
 
 @media (min-width: 768px) {
   .hero__button {
-    position: absolute;
+    position: relative;
     z-index: 5;
-    bottom: 186px;
+    bottom: 580px;
     width: 244px;
-    height: 54px;
-    left: 120px;
+    left: 90px;
+    min-height: 54px;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
 @media (min-width: 1440px) {
   .hero__button {
-    position: static;
     margin-left: 80px;
+    position: relative;
+    left: 0;
+    bottom: 498px;
   }
 }

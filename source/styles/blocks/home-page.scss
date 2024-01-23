@@ -5,3 +5,9 @@
   font-style: $font-style-normal;
   margin: 0;
 }
+
+.home-page .navigation__link {
+  @media (min-width: 1440px) {
+    color: #ffffff;
+  }
+}

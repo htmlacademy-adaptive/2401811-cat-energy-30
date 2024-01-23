@@ -278,51 +278,59 @@
         <h2 class="additional-products__title">Дополнительные товары</h2>
         <ul class="additional-products__list">
           <li class="additional-products__item">
-            <a class="additional-products__link" href="#">
-              <h3 class="additional-products__name">Сахарозаменитель</h3>
-            </a>
-            <dl class="additional-products__characteristics">
-              <div class="additional-products__characteristics-item">
-                <dt class="additional-products__characteristics-weight">1 упаковка (100 г)</dt>
-                <dd class="additional-products__characteristics-price">200 ₽</dd>
-              </div>
-            </dl>
+            <div class="additional-products__wrapper">
+              <a class="additional-products__link" href="#">
+                <h3 class="additional-products__name">Сахарозаменитель</h3>
+              </a>
+              <dl class="additional-products__characteristics">
+                <div class="additional-products__characteristics-item">
+                  <dt class="additional-products__characteristics-weight">1 упаковка (100 г)</dt>
+                  <dd class="additional-products__characteristics-price">200 ₽</dd>
+                </div>
+              </dl>
+            </div>
             <button class="additional-products__button button button--primary" type="button">Заказать</button>
           </li>
           <li class="additional-products__item">
-            <a class="additional-products__link" href="#">
-              <h3 class="additional-products__name">Питьевая вода</h3>
-            </a>
-            <dl class="additional-products__characteristics">
-              <div class="additional-products__characteristics-item">
-                <dt class="additional-products__characteristics-weight">5 литров</dt>
-                <dd class="additional-products__characteristics-price">50 ₽</dd>
-              </div>
-            </dl>
+            <div class="additional-products__wrapper">
+              <a class="additional-products__link" href="#">
+                <h3 class="additional-products__name">Питьевая вода</h3>
+              </a>
+              <dl class="additional-products__characteristics">
+                <div class="additional-products__characteristics-item">
+                  <dt class="additional-products__characteristics-weight">5 литров</dt>
+                  <dd class="additional-products__characteristics-price">50 ₽</dd>
+                </div>
+              </dl>
+            </div>
             <button class="additional-products__button button button--primary" type="button">Заказать</button>
           </li>
           <li class="additional-products__item">
-            <a class="additional-products__link" href="#">
-              <h3 class="additional-products__name">Молоко</h3>
-            </a>
-            <dl class="additional-products__characteristics">
-              <div class="additional-products__characteristics-item">
-                <dt class="additional-products__characteristics-weight">1 литр</dt>
-                <dd class="additional-products__characteristics-price">100 ₽</dd>
-              </div>
-            </dl>
+            <div class="additional-products__wrapper">
+              <a class="additional-products__link" href="#">
+                <h3 class="additional-products__name">Молоко</h3>
+              </a>
+              <dl class="additional-products__characteristics">
+                <div class="additional-products__characteristics-item">
+                  <dt class="additional-products__characteristics-weight">1 литр</dt>
+                  <dd class="additional-products__characteristics-price">100 ₽</dd>
+                </div>
+              </dl>
+            </div>
             <button class="additional-products__button button button--primary" type="button">Заказать</button>
           </li>
           <li class="additional-products__item">
-            <a class="additional-products__link" href="#">
-              <h3 class="additional-products__name">Витамины</h3>
-            </a>
-            <dl class="additional-products__characteristics">
-              <div class="additional-products__characteristics-item">
-                <dt class="additional-products__characteristics-weight">1 упаковка (30 г)</dt>
-                <dd class="additional-products__characteristics-price">300 ₽</dd>
-              </div>
-            </dl>
+            <div class="additional-products__wrapper">
+              <a class="additional-products__link" href="#">
+                <h3 class="additional-products__name">Витамины</h3>
+              </a>
+              <dl class="additional-products__characteristics">
+                <div class="additional-products__characteristics-item">
+                  <dt class="additional-products__characteristics-weight">1 упаковка (30 г)</dt>
+                  <dd class="additional-products__characteristics-price">300 ₽</dd>
+                </div>
+              </dl>
+            </div>
             <button class="additional-products__button button button--primary" type="button">Заказать</button>
           </li>
         </ul>
@@ -338,8 +346,11 @@
   <footer class="main-footer">
     <div class="main-footer__top-footer">
       <div class="main-footer__contacts">
-        <b class="main-footer__contacts-title">приглашаем к сотрудничеству дилеров!</b>
-        <p class="main-footer__contacts-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <span class="main-footer__contacts-title">приглашаем<br> к сотрудничеству дилеров!</span>
+        <p class="main-footer__contacts-address">
+          <span class="main-footer__street">ул. Большая Конюшенная, д. 19/8 </span>
+          <span class="main-footer__city">Санкт-Петербург</span>
+        </p>
       </div>
       <div class="main-footer__map">
         <iframe class="main-footer__map-frame"
@@ -349,57 +360,54 @@
         </iframe>
       </div>
     </div>
-    <div class="container">
-      <div class="main-footer__bottom-footer">
-        <div class="main-footer__social">
-          <a class="main-footer__social-logo" href="index.html">
-            <span class="visually-hidden">Логотип Кэт Энерджи</span>
-            <svg class="main-footer__social-logo-image" width="128" height="24">
-              <use href="images/icons/stack.svg#logo-footer"></use>
-            </svg>
-          </a>
-          <ul class="main-footer__social-list">
-            <li class="main-footer__social-item">
-              <a class="main-footer__social-link main-footer__social-link--vkontakte" href="https://vk.com/htmlacademy"
-                aria-label="Ссылка на ВК Академии">
-                <span class="visually-hidden">Ссылка на ВК Академии</span>
-                <svg class="main-footer__social-icon main-footer__social-icon--vkontakte" width="28" height="22">
-                  <use href="images/icons/stack.svg#vkontakte"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="main-footer__social-item">
-              <a class="main-footer__social-link main-footer__social-link--youtube" href="https://vk.com/htmlacademy"
-                aria-label="Ссылка на Ютуб Академии">
-                <span class="visually-hidden">Ссылка на Ютуб Академии</span>
-                <svg class="main-footer__social-icon main-footer__social-icon--youtube" width="28" height="22">
-                  <use href="images/icons/stack.svg#youtube"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="main-footer__social-item">
-              <a class="main-footer__social-link main-footer__social-link--telegram" href="https://vk.com/htmlacademy"
-                aria-label="Ссылка на ТГ Академии">
-                <span class="visually-hidden">Ссылка на ТГ Академии</span>
-                <svg class="main-footer__social-icon main-footer__social-icon--telegram" width="28" height="22">
-                  <use href="images/icons/stack.svg#telegram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="main-footer__copyright">
-          <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="visually-hidden">Надпись HTML Академия</span>
-            <svg class="main-footer__copyright-logo-text" width="113" height="20">
-              <use href="images/icons/stack.svg#logo-academy-text"></use>
-            </svg>
-            <span class="visually-hidden">Логотип HTML Академии</span>
-            <svg class="main-footer__copyright-logo" width="27" height="34">
-              <use href="images/icons/stack.svg#academy-logo-footer"></use>
-            </svg>
-          </a>
-        </div>
+    <div class="main-footer__bottom-footer">
+      <div class="main-footer__social">
+        <a class="main-footer__social-logo" href="index.html">
+          <span class="visually-hidden">Логотип Кэт Энерджи</span>
+          <svg class="main-footer__social-logo-image" width="128" height="24">
+            <use href="images/icons/stack.svg#logo-footer"></use>
+          </svg>
+        </a>
+        <ul class="main-footer__social-list">
+          <li class="main-footer__social-item">
+            <a class="main-footer__social-link main-footer__social-link--vkontakte" href="https://vk.com/htmlacademy"
+              aria-label="Ссылка на ВК Академии">
+              <span class="visually-hidden">Ссылка на ВК Академии</span>
+              <svg class="main-footer__social-icon main-footer__social-icon--vkontakte" width="28" height="22">
+                <use href="images/icons/stack.svg#vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="main-footer__social-item">
+            <a class="main-footer__social-link main-footer__social-link--youtube" href="https://vk.com/htmlacademy"
+              aria-label="Ссылка на Ютуб Академии">
+              <span class="visually-hidden">Ссылка на Ютуб Академии</span>
+              <svg class="main-footer__social-icon main-footer__social-icon--youtube" width="28" height="22">
+                <use href="images/icons/stack.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="main-footer__social-item">
+            <a class="main-footer__social-link main-footer__social-link--telegram" href="https://vk.com/htmlacademy"
+              aria-label="Ссылка на ТГ Академии">
+              <span class="visually-hidden">Ссылка на ТГ Академии</span>
+              <svg class="main-footer__social-icon main-footer__social-icon--telegram" width="28" height="22">
+                <use href="images/icons/stack.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright">
+        <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="visually-hidden">Логотип HTML Академии</span>
+          <svg class="main-footer__copyright-logo-text" width="113" height="20">
+            <use href="images/icons/stack.svg#logo-academy-text"></use>
+          </svg>
+          <svg class="main-footer__copyright-logo" width="27" height="34">
+            <use href="images/icons/stack.svg#academy-logo-footer"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>
