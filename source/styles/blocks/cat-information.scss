@@ -14,6 +14,12 @@
   .cat-information {
     padding-left: 40px;
   }
+
+  @media (min-width: 1440px) {
+    .cat-information {
+      padding-left: 0;
+    }
+  }
 }
 
 .cat-information__control-list {
@@ -35,25 +41,72 @@
     font-size: 20px;
     line-height: normal;
   }
+
+  @media (min-width: 1440px) {
+    padding: 25px 0 25px 28px;
+    border: 1px solid #e7e7e7;
+    margin-left: 0;
+    margin-right: 0;
+    position: absolute;
+    left: 760px;
+    top: 429px;
+    width: 570px;
+  }
 }
 
 .cat-information__control-item {
   height: 30px;
   align-items: center;
   display: flex;
+  position: relative;
 
   @media (min-width: 768px) {
     min-height: 40px;
   }
 }
 
+.cat-information__radio[type="radio"]:checked+.cat-information__control-mark {
+  background-image: url("../../images/form-radio.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.cat-information__control-mark {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  background-color: #ffffff;
+  bottom: 1px;
+
+  @media (min-width:768px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.cat-information__control-label {
+  padding-left: 45px;
+
+  @media (min-width:768px) {
+    padding-left: 60px;
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
 .cat-information__input {
   height: 45px;
-  padding: 0;
+  padding: 14px 0 13px 15px;
   border: 1px solid #cdcdcd;
 
   @media (min-width: 768px) {
     min-height: 52px;
+  }
+
+  @media (min-width: 1440px) {
+    height: 52px;
   }
 
   &.cat-information__input--name {
@@ -61,7 +114,12 @@
     margin-bottom: 14px;
 
     @media (min-width: 768px) {
-      min-width: 568px;
+      width: 568px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 510px;
       margin-bottom: 20px;
     }
   }
@@ -71,18 +129,28 @@
     margin-bottom: 14px;
 
     @media (min-width: 768px) {
-      min-width: 540px;
+      width: 540px;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 482px;
       margin-bottom: 20px;
     }
   }
 
   &.cat-information__input--age {
-    min-width: 173px;
+    width: 173px;
     margin-bottom: 24px;
 
     @media (min-width: 768px) {
-      min-width: 498px;
+      width: 498px;
       margin-bottom: 72px;
+    }
+
+    @media (min-width: 1440px) {
+      width: 440px;
+      margin-bottom: 0;
     }
   }
 
