@@ -70,6 +70,7 @@
   .additional-products__list {
     outline: none;
     width: 895px;
+    margin: 0;
   }
 
   .additional-products__button {
@@ -163,21 +164,26 @@
     padding: 15px 0 17px 0;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #cdcdcd;
 
     &:nth-child(1) {
+      padding: 15px 0 17px 0;
       border-bottom: 1px solid #cdcdcd;
       border-top: 1px solid #cdcdcd;
     }
 
     &:nth-child(2) {
+      padding: 15px 0 17px 0;
       border-bottom: 1px solid #cdcdcd;
     }
 
     &:nth-child(3) {
+      padding: 15px 0 17px 0;
       border-bottom: 1px solid #cdcdcd;
     }
 
     &:nth-child(4) {
+      padding: 15px 0 17px 0;
       border-bottom: 1px solid #cdcdcd;
     }
 
@@ -235,9 +241,11 @@
 
   @media (min-width: 1440px) {
     width: 245px;
-    height: 288px;
+    height: 290px;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/image-banner-desktop.jpg");
     position: absolute;
+    top: 1587px;
+    right: 109px;
   }
 
   & > span {
@@ -254,11 +262,21 @@
       padding: 0;
       gap: 264px;
       align-self: center;
-      min-width: 707px;
+      width: 707px;
       padding-left: 77px;
       padding-right: 125px;
       text-align: start;
       align-items: center;
+    }
+
+    @media (min-width: 1440px) {
+      flex-direction: column;
+      gap: 46px;
+      padding: 56px 42px 43px 42px;
+      align-items: center;
+      width: 161px;
+      box-sizing: content-box;
+      text-align: center;
     }
   }
 
@@ -273,6 +291,10 @@
 
     @media (min-width: 768px) {
       width: 150px;
+    }
+
+    @media (min-width: 768px) {
+      width: 80px;
     }
   }
 }
