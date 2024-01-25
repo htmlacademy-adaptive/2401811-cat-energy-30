@@ -18,6 +18,8 @@
   @media (min-width: 1440px) {
     .cat-information {
       padding-left: 0;
+      display: flex;
+      gap: 80px;
     }
   }
 }
@@ -47,9 +49,6 @@
     border: 1px solid #e7e7e7;
     margin-left: 0;
     margin-right: 0;
-    position: absolute;
-    left: 760px;
-    top: 429px;
     width: 570px;
   }
 }
@@ -189,6 +188,6 @@
   margin-right: 9px;
 
   @media (min-width: 768px) {
-    margin-right: 10px;
+    margin-right: 8px;
   }
 }

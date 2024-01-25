@@ -1,15 +1,28 @@
 .example {
   background-color: #eaeaea;
-  padding: 25px 20px 40px 20px;
+  padding: 25px 0 40px 0;
 
   @media (min-width: 768px) {
-    padding: 45px 30px 101px 30px;
+    padding: 45px 0 101px 0;
     background-image: linear-gradient(to top, #f2f2f2 462px, #ffffff 15%);
   }
 
   @media (min-width: 1440px) {
-    padding: 70px 110px 75px 110px;
+    padding: 70px 0 75px 0;
     background-image: linear-gradient(to top, #f2f2f2 462px, #ffffff 15%);
+  }
+
+  & .container {
+    @media (min-width: 1440px) {
+      display: flex;
+      gap: 224px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .example__wrapper {
+    height: 176px;
   }
 }
 
@@ -153,12 +166,6 @@
 .example__slider {
   display: flex;
   justify-content: center;
-
-  @media (min-width: 1440px) {
-    position: absolute;
-    right: 110px;
-    top: 1663px;
-  }
 }
 
 .example__slider-bar {

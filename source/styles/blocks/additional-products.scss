@@ -31,6 +31,20 @@
     padding-top: 76px;
     padding-bottom: 87px;
   }
+
+  & .container {
+    @media (min-width: 1440px) {
+      display: flex;
+      gap: 81px;
+    }
+  }
+}
+
+.additional-products__wrapper {
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media (min-width: 768px) {
@@ -243,12 +257,12 @@
     width: 245px;
     height: 290px;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/image-banner-desktop.jpg");
-    position: absolute;
-    top: 1587px;
-    right: 109px;
+    align-self: flex-end;
+    position: relative;
+    bottom: 4px;
   }
 
-  & > span {
+  &>span {
     align-self: flex-end;
     padding-bottom: 43px;
     padding-left: 58px;
@@ -280,7 +294,7 @@
     }
   }
 
-  & > span::before {
+  &>span::before {
     content: url(" ");
     background-image: url("../../images/icons/icon-gift.svg");
     display: flex;

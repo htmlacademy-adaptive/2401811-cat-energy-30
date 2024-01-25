@@ -124,40 +124,49 @@
     </section>
 
     <section class="example">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-        Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
-        по 16 часов в день.</p>
-      <dl class="example__list">
-        <div class="example__item">
-          <dt class="example__stat">5 кг</dt>
-          <dd class="example__description">снижение веса</dd>
+      <div class="container">
+        <div class="example__container">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+            Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
+            по 16 часов в день.</p>
+          <div class="example__wrapper">
+            <dl class="example__list">
+              <div class="example__item">
+                <dt class="example__stat">5 кг</dt>
+                <dd class="example__description">снижение веса</dd>
+              </div>
+              <div class="example__item">
+                <dt class="example__stat">60 дней</dt>
+                <dd class="example__description">затрачено времени</dd>
+              </div>
+            </dl>
+            <span class="example__costs">Затраты на питание: <span class="example__costs-number">15 000
+                руб.</span></span>
+          </div>
         </div>
-        <div class="example__item">
-          <dt class="example__stat">60 дней</dt>
-          <dd class="example__description">затрачено времени</dd>
-        </div>
-      </dl>
-      <span class="example__costs">Затраты на питание: <span class="example__costs-number">15 000 руб.</span></span>
-      <div class="example__slider slider">
-        <div class="example__slider-bar">
-          <picture>
-            <source width="560" height="512" media="(min-width: 1440px)"
-              srcset="./images/compare-slider-desktop@1x.png 1x, images/compare-slider-desktop@2x.png 2x"
-              type="image/png">
-            <source width="560" height="512" media="(min-width: 768px)"
-              srcset="./images/compare-slider-tablet@1x.png 1x, images/compare-slider-tablet@2x.png 2x"
-              type="image/png">
-            <img width="280" height="256" src="./images/compare-slider-mobile@1x.png"
-              alt="Сравнение кошки до и после питания." srcset="./images/compare-slider-mobile@2x.png 2x">
-          </picture>
-          <div class="example__slider-control">
-            <button class="example__slider-toggle" type="button">
-              <span class="visually-hidden">Кнопка слайдера</span>
-              <svg class="example__slider-thumb" width="40" height="40">
-                <use href="images/icons/stack.svg#thumb-slider"></use>
-              </svg>
-            </button>
+        <div class="example__slider-container">
+          <div class="example__slider slider">
+            <div class="example__slider-bar">
+              <picture>
+                <source width="560" height="512" media="(min-width: 1440px)"
+                  srcset="./images/compare-slider-desktop@1x.png 1x, images/compare-slider-desktop@2x.png 2x"
+                  type="image/png">
+                <source width="560" height="512" media="(min-width: 768px)"
+                  srcset="./images/compare-slider-tablet@1x.png 1x, images/compare-slider-tablet@2x.png 2x"
+                  type="image/png">
+                <img width="280" height="256" src="./images/compare-slider-mobile@1x.png"
+                  alt="Сравнение кошки до и после питания." srcset="./images/compare-slider-mobile@2x.png 2x">
+              </picture>
+              <div class="example__slider-control">
+                <button class="example__slider-toggle" type="button">
+                  <span class="visually-hidden">Кнопка слайдера</span>
+                  <svg class="example__slider-thumb" width="40" height="40">
+                    <use href="images/icons/stack.svg#thumb-slider"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -167,12 +176,14 @@
 
   <footer class="main-footer">
     <div class="main-footer__top-footer">
-      <div class="main-footer__contacts">
-        <span class="main-footer__contacts-title">приглашаем<br> к сотрудничеству дилеров!</span>
-        <p class="main-footer__contacts-address">
-          <span class="main-footer__street">ул. Большая Конюшенная, д. 19/8</span>
-          <span class="main-footer__city">Санкт-Петербург</span>
-        </p>
+      <div class="container">
+        <div class="main-footer__contacts">
+          <span class="main-footer__contacts-title">приглашаем<br> к сотрудничеству дилеров!</span>
+          <p class="main-footer__contacts-address">
+            <span class="main-footer__street">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="main-footer__city">Санкт-Петербург</span>
+          </p>
+        </div>
       </div>
       <div class="main-footer__map">
         <iframe class="main-footer__map-frame"
@@ -183,53 +194,55 @@
       </div>
     </div>
     <div class="main-footer__bottom-footer">
-      <div class="main-footer__social">
-        <a class="main-footer__social-logo" href="index.html">
-          <span class="visually-hidden">Логотип Кэт Энерджи</span>
-          <svg class="main-footer__social-logo-image" width="128" height="24">
-            <use href="images/icons/stack.svg#logo-footer"></use>
-          </svg>
-        </a>
-        <ul class="main-footer__social-list">
-          <li class="main-footer__social-item">
-            <a class="main-footer__social-link main-footer__social-link--vkontakte" href="https://vk.com/htmlacademy"
-              aria-label="Ссылка на ВК Академии">
-              <span class="visually-hidden">Ссылка на ВК Академии</span>
-              <svg class="main-footer__social-icon main-footer__social-icon--vkontakte" width="28" height="22">
-                <use href="images/icons/stack.svg#vkontakte"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="main-footer__social-item">
-            <a class="main-footer__social-link main-footer__social-link--youtube" href="https://vk.com/htmlacademy"
-              aria-label="Ссылка на Ютуб Академии">
-              <span class="visually-hidden">Ссылка на Ютуб Академии</span>
-              <svg class="main-footer__social-icon main-footer__social-icon--youtube" width="28" height="22">
-                <use href="images/icons/stack.svg#youtube"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="main-footer__social-item">
-            <a class="main-footer__social-link main-footer__social-link--telegram" href="https://vk.com/htmlacademy"
-              aria-label="Ссылка на ТГ Академии">
-              <span class="visually-hidden">Ссылка на ТГ Академии</span>
-              <svg class="main-footer__social-icon main-footer__social-icon--telegram" width="28" height="22">
-                <use href="images/icons/stack.svg#telegram"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="main-footer__copyright">
-        <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="visually-hidden">Логотип HTML Академии</span>
-          <svg class="main-footer__copyright-logo-text" width="113" height="20">
-            <use href="images/icons/stack.svg#logo-academy-text"></use>
-          </svg>
-          <svg class="main-footer__copyright-logo" width="27" height="34">
-            <use href="images/icons/stack.svg#academy-logo-footer"></use>
-          </svg>
-        </a>
+      <div class="container">
+        <div class="main-footer__social">
+          <a class="main-footer__social-logo" href="index.html">
+            <span class="visually-hidden">Логотип Кэт Энерджи</span>
+            <svg class="main-footer__social-logo-image" width="128" height="24">
+              <use href="images/icons/stack.svg#logo-footer"></use>
+            </svg>
+          </a>
+          <ul class="main-footer__social-list">
+            <li class="main-footer__social-item">
+              <a class="main-footer__social-link main-footer__social-link--vkontakte" href="https://vk.com/htmlacademy"
+                aria-label="Ссылка на ВК Академии">
+                <span class="visually-hidden">Ссылка на ВК Академии</span>
+                <svg class="main-footer__social-icon main-footer__social-icon--vkontakte" width="28" height="22">
+                  <use href="images/icons/stack.svg#vkontakte"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-footer__social-item">
+              <a class="main-footer__social-link main-footer__social-link--youtube" href="https://vk.com/htmlacademy"
+                aria-label="Ссылка на Ютуб Академии">
+                <span class="visually-hidden">Ссылка на Ютуб Академии</span>
+                <svg class="main-footer__social-icon main-footer__social-icon--youtube" width="28" height="22">
+                  <use href="images/icons/stack.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-footer__social-item">
+              <a class="main-footer__social-link main-footer__social-link--telegram" href="https://vk.com/htmlacademy"
+                aria-label="Ссылка на ТГ Академии">
+                <span class="visually-hidden">Ссылка на ТГ Академии</span>
+                <svg class="main-footer__social-icon main-footer__social-icon--telegram" width="28" height="22">
+                  <use href="images/icons/stack.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright">
+          <a class="main-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="visually-hidden">Логотип HTML Академии</span>
+            <svg class="main-footer__copyright-logo-text" width="113" height="20">
+              <use href="images/icons/stack.svg#logo-academy-text"></use>
+            </svg>
+            <svg class="main-footer__copyright-logo" width="27" height="34">
+              <use href="images/icons/stack.svg#academy-logo-footer"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </footer>
