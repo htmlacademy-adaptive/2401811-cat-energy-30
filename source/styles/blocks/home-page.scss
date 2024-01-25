@@ -6,6 +6,8 @@
   margin: 0;
 }
 
-.home-page .main-footer__contacts {
-  background-color: #ffffff;
+.home-page .navigation__link {
+  @media (min-width: 1440px) {
+    color: #ffffff;
+  }
 }

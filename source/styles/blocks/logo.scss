@@ -9,3 +9,10 @@
     gap: 13px;
   }
 }
+
+@media (min-width: 1440px) {
+  .logo__image {
+    width: 118px;
+    height: 21px;
+  }
+}

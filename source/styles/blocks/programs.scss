@@ -1,5 +1,13 @@
-.programs {
-  margin-bottom: 20px;
+.programs .container {
+  padding: 20px 20px 0 20px;
+
+  @media (min-width: 768px) {
+    padding: 0 30px 0 30px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 82px 0 0 0;
+  }
 }
 
 .programs__title {
@@ -10,12 +18,33 @@
   padding-left: 70px;
   padding-top: 9px;
   margin-bottom: 29px;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 73px;
+    padding-left: 162px;
+  }
 }
 
 .programs__list {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (min-width: 768px) {
+    gap: 30px;
+  }
+
+  @media (min-width: 1440px) {
+    flex-direction: row;
+    gap: 80px;
+  }
 }
 
 .programs__wrapper {
@@ -28,6 +57,25 @@
   background-color: #f2f2f2;
   min-width: 280px;
   padding: 21px 33px 18px 20px;
+
+  @media (min-width: 768px) {
+    max-width: 708px;
+    min-height: 238px;
+    padding: 77px 63px 57px 52px;
+    box-sizing: content-box;
+  }
+
+  @media (min-width: 1440px) {
+    min-width: 570px;
+    min-height: 374px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 77px;
+    box-sizing: border-box;
+    padding-left: 52px;
+  }
 }
 
 .programs__description {
@@ -38,6 +86,18 @@
   min-width: 227px;
   margin: 0;
   margin-bottom: 23px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 340px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: 1440px) {
+    min-width: 457px;
+    margin-bottom: 27px;
+  }
 }
 
 .programs__link {
@@ -59,6 +119,10 @@
   align-items: flex-start;
   height: 1px;
   margin-bottom: 15px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .programs__link-text {
@@ -68,11 +132,23 @@
   text-transform: uppercase;
   color: $base-color-text;
   margin-right: 15px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 25px;
+  }
 }
 
 .programs__vector {
   position: relative;
   bottom: 2px;
+  left: -6px;
+  justify-self: flex-start;
+
+  @media (min-width: 768px) {
+    bottom: 3px;
+  }
 }
 
 .programs__item--losing-weight {
@@ -80,6 +156,16 @@
   background-size: 50px 53px;
   background-repeat: no-repeat;
   background-position: 20px 21px;
+
+  @media (min-width: 768px) {
+    background-size: 200px 211px;
+    background-position: 445px;
+  }
+
+  @media (min-width: 1440px) {
+    background-size: 100px 100px;
+    background-position: 52px 41px;
+  }
 }
 
 .programs__item--weight-gain {
@@ -87,4 +173,15 @@
   background-size: 67px 50px;
   background-repeat: no-repeat;
   background-position: 13px 24px;
+
+  @media (min-width: 768px) {
+    background-image: url("../../images/icons/cat-back-tablet.svg");
+    background-size: 268px 200px;
+    background-position: 411px 91px;
+  }
+
+  @media (min-width: 1440px) {
+    background-size: 134px 100px;
+    background-position: 33px 47px;
+  }
 }

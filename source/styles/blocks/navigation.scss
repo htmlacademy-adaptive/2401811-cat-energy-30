@@ -9,6 +9,11 @@
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
+
+  @media (min-width: 1440px) {
+    font-size: 20px;
+    line-height: normal;
+  }
 }
 
 .navigation__list {
@@ -17,20 +22,25 @@
   display: none;
 }
 
-@media (min-width: 768px) {
-  .navigation__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
 .navigation__toggle {
   border: none;
   background-color: transparent;
+  padding: 0;
+}
+
+.navigation__bars {
+  position: relative;
+  top: 3px;
 }
 
 @media (min-width: 768px) {
   .navigation__toggle {
     display: none;
+  }
+
+  .navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
   }
 }

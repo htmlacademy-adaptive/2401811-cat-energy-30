@@ -1,5 +1,15 @@
-.features {
-  margin-bottom: 49px;
+.features .container {
+  padding: 20px 20px 49px 20px;
+
+  @media (min-width: 768px) {
+    padding: 45px 30px 47px 30px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 71px 0 0 0;
+    border: none;
+  }
 }
 
 .features__title {
@@ -7,51 +17,147 @@
   line-height: 40px;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
 }
 
 .features__list {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 137px;
+    row-gap: 37px;
+  }
+
+  @media (min-width: 1440px) {
+    gap: 76px;
+  }
 }
 
 .features__item {
   color: $additional-color-text;
   font-family: "Lato", sans-serif;
   font-size: 14px;
-  width: 280px;
+  max-width: 280px;
   line-height: 18px;
   min-height: 60px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
+  @media (min-width: 768px) {
+    width: 248px;
+    justify-content: flex-start;
+    min-height: 280px;
+    position: relative;
+  }
+
+  @media (min-width: 1440px) {
+    min-width: 230px;
+  }
 }
 
 .features__description {
-  max-width: 204px;
+  padding-left: 80px;
   margin: 0;
+  color: #444444;
+  z-index: 100;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.features__number {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    position: absolute;
+    color: #f2f2f2;
+    font-family: "Oswald", sans-serif;
+    font-size: 280px;
+    line-height: 280px;
+    bottom: 0;
+    left: 118px;
+    z-index: 1;
+  }
 }
 
 .features__item--leaf {
   background-image: url("../../images/icons/stack.svg#icon-leaf");
   background-size: 60px 60px;
   background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    background-size: 80px 80px;
+    background-position: 0 40px;
+    padding-top: 151px;
+    padding-bottom: 57px;
+
+    & .features__description {
+      max-width: 204px;
+    }
+  }
 }
 
 .features__item--powder {
   background-image: url("../../images/icons/stack.svg#icon-chemistry");
   background-size: 60px 60px;
   background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    background-size: 80px 80px;
+    background-position: 0 40px;
+    padding-top: 151px;
+    padding-bottom: 57px;
+
+    & .features__description {
+      max-width: 224px;
+    }
+  }
 }
 
 .features__item--eat {
   background-image: url("../../images/icons/stack.svg#icon-food");
   background-size: 60px 60px;
   background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    background-size: 80px 80px;
+    background-position: 0 40px;
+    padding-top: 151px;
+    padding-bottom: 57px;
+
+    & .features__description {
+      max-width: 207px;
+    }
+  }
 }
 
 .features__item--clock {
   background-image: url("../../images/icons/stack.svg#icon-clock");
   background-size: 60px 60px;
   background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    background-size: 80px 80px;
+    background-position: 0 40px;
+    padding-top: 151px;
+    padding-bottom: 57px;
+
+    & .features__description {
+      max-width: 245px;
+    }
+  }
 }

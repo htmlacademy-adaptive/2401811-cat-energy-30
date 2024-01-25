@@ -4,5 +4,25 @@
   font-weight: $font-weight-regular;
   font-style: $font-style-normal;
   margin: 0;
-  width: 320px;
+}
+
+.form-page .main-header {
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: 768px) {
+    border: none;
+  }
+}
+
+.form-page .main-footer__contacts {
+  background-color: #f2f2f2;
+
+  @media (min-width: 1440px) {
+    position: absolute;
+    z-index: 10;
+    background-color: #ffffff;
+    gap: 87px;
+    top: 1705px;
+    left: 110px;
+  }
 }
