@@ -262,7 +262,7 @@
     bottom: 4px;
   }
 
-  &>span {
+  & > span {
     align-self: flex-end;
     padding-bottom: 43px;
     padding-left: 58px;
@@ -294,7 +294,7 @@
     }
   }
 
-  &>span::before {
+  & > span::before {
     content: url(" ");
     background-image: url("../../images/icons/icon-gift.svg");
     display: flex;
