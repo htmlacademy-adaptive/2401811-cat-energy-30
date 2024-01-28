@@ -63,7 +63,7 @@
   }
 }
 
-.cat-information__radio[type="radio"]:checked+.cat-information__control-mark {
+.cat-information__radio[type="radio"]:checked + .cat-information__control-mark {
   background-image: url("../../images/form-radio.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;

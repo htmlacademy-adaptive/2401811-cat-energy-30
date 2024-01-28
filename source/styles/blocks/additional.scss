@@ -92,7 +92,7 @@
   }
 }
 
-.additional__checkbox[type="checkbox"]:checked+.additional__control-mark {
+.additional__checkbox[type="checkbox"]:checked + .additional__control-mark {
   background-image: url("../../images/form-tick.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
