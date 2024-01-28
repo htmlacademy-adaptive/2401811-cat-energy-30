@@ -41,16 +41,38 @@
   font-size: 24px;
   line-height: 26px;
   margin-bottom: 34px;
+  position: relative;
+  background: #ffffff;
+  box-shadow: -20px 0 0 0#ffffff, 20px 0 0 0#ffffff;
 
   @media (min-width: 768px) {
     font-size: 36px;
     line-height: 36px;
     padding-left: 40px;
     margin-bottom: 57px;
+    box-shadow: 0 0 0 0#ffffff, 40px 0 0 0#ffffff;
   }
 
   @media (min-width: 1440px) {
     padding-left: 0;
+    box-shadow: -40px 0 0 0#ffffff, 40px 0 0 0#ffffff;
+  }
+}
+
+.additional__subtitle::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 100vw;
+  height: 2px;
+  background: transparent;
+  box-shadow: 100vw 0 0 #68b738;
+  z-index: -1;
+
+  @media (min-width: 768px) {
+    top: 21px;
+    background: #68b738;
   }
 }
 
@@ -70,7 +92,7 @@
   }
 }
 
-.additional__checkbox[type="checkbox"]:checked + .additional__control-mark {
+.additional__checkbox[type="checkbox"]:checked+.additional__control-mark {
   background-image: url("../../images/form-tick.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -97,5 +119,15 @@
     padding-left: 60px;
     font-size: 20px;
     line-height: normal;
+  }
+}
+
+.additional__control {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

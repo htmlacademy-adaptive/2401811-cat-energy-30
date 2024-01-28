@@ -80,6 +80,7 @@
     position: absolute;
     z-index: -1;
     width: 100%;
+    top: 0;
   }
 }
 
@@ -110,6 +111,9 @@
     z-index: 10;
     background-color: #ffffff;
     gap: 87px;
+    width: 565px;
+    position: relative;
+    right: 335px;
   }
 }
 
@@ -118,12 +122,26 @@
     min-height: 400px;
     display: flex;
     align-items: center;
+    position: relative;
   }
 
   & .container {
-    max-width: 1220px;
     margin: 0 auto;
     padding: 0;
+
+    @media (min-width: 768px) {
+      margin: 0 auto;
+      padding: 0;
+      max-width: 1440px;
+    }
+
+    @media (min-width: 1440px) {
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 0;
+      display: flex;
+      justify-self: flex-start;
+    }
   }
 }
 

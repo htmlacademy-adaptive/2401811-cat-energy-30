@@ -204,6 +204,16 @@
   }
 }
 
+.example__slider-thumb {
+  stroke: #666666;
+  fill: #ffffff;
+}
+
+.example__slider-thumb:hover {
+  stroke: #68b738;
+  fill: #ffffff;
+}
+
 .example__slider-toggle {
   border: none;
   padding: 0;
