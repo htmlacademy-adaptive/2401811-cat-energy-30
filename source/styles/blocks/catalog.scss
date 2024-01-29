@@ -69,7 +69,7 @@
     font-size: 20px;
     line-height: 24px;
     width: 135px;
-    height: 48px;
+    height: 100%;
   }
 }
 
@@ -121,15 +121,16 @@
   padding: 20px 0 25px 0;
   max-width: 320px;
   position: relative;
+  flex-grow: 1;
 
   @media (min-width: 768px) {
     width: 324px;
-    max-height: 511px;
     flex-direction: column;
     padding: 0 37px 40px 37px;
     align-items: center;
     background-image: linear-gradient(to bottom, #ffffff 16%, #f2f2f2 16%);
     outline: none;
+    height: 100%;
 
     &:nth-child(1) .catalog__card-link-image {
       max-width: 250px;
@@ -373,7 +374,7 @@
   height: 41px;
 
   @media (min-width: 768px) {
-    height: 48px;
+    height: 100%;
     margin-bottom: 20px;
   }
 
