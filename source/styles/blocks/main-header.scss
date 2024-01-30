@@ -27,4 +27,18 @@
   .main-header__logo {
     margin-right: 0;
   }
+
+  .home-page .main-header::after {
+    content: "";
+    display: flex;
+    height: 694px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 0;
+    background: linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%), url("../../images/index-background-desktop.jpg"), #535257;
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
 }
