@@ -284,9 +284,10 @@
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/image-banner.jpg");
 
   @media (min-width: 768px) {
-    width: 707px;
+    width: 100%;
     height: 200px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/image-banner-tablet.jpg");
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/image-banner-tablet.jpg"), #535257;
+    background-repeat: no-repeat;
   }
 
   @media (min-width: 1440px) {
