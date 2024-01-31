@@ -11,3 +11,9 @@
     color: #ffffff;
   }
 }
+
+.home-page .active::after {
+  @media (min-width: 1440px) {
+    background: #ffffff;
+  }
+}

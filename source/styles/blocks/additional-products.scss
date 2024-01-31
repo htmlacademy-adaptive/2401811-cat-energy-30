@@ -5,16 +5,39 @@
   line-height: 24px;
   margin: 0;
   margin-bottom: 36px;
+  width: fit-content;
+  position: relative;
+  background: #ffffff;
+  box-shadow: -20px 0 0 0#ffffff, 20px 0 0 0#ffffff;
 
   @media (min-width: 768px) {
     font-size: 36px;
     line-height: 36px;
     padding-left: 40px;
     margin-bottom: 80px;
+    box-shadow: 0 0 0 0#ffffff, 40px 0 0 0#ffffff;
   }
 
   @media (min-width: 1440px) {
     padding-left: 0;
+    box-shadow: -40px 0 0 0#ffffff, 40px 0 0 0#ffffff;
+  }
+}
+
+.additional-products__title::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  right: 0;
+  width: 100vw;
+  height: 2px;
+  background: transparent;
+  box-shadow: 100vw 0 0 #68b738;
+  z-index: -1;
+
+  @media (min-width: 768px) {
+    top: 20px;
+    background: #68b738;
   }
 }
 
@@ -31,6 +54,38 @@
     padding-top: 76px;
     padding-bottom: 87px;
   }
+
+  & .container {
+    @media (min-width: 1440px) {
+      display: flex;
+      gap: 81px;
+    }
+  }
+}
+
+.additional-products__wrapper {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.additional-products__item-wrapper {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 768px) {
@@ -42,11 +97,6 @@
 
   .additional-products__button {
     width: 632px;
-  }
-
-  .additional-products__wrapper {
-    display: flex;
-    justify-content: space-between;
   }
 
   .additional-products__item:nth-child(1) .additional-products__characteristics-item {
@@ -234,18 +284,19 @@
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/image-banner.jpg");
 
   @media (min-width: 768px) {
-    width: 707px;
+    width: 100%;
     height: 200px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/image-banner-tablet.jpg");
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/image-banner-tablet.jpg"), #535257;
+    background-repeat: no-repeat;
   }
 
   @media (min-width: 1440px) {
     width: 245px;
     height: 290px;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/image-banner-desktop.jpg");
-    position: absolute;
-    top: 1587px;
-    right: 109px;
+    align-self: flex-end;
+    position: relative;
+    bottom: 4px;
   }
 
   & > span {
@@ -281,7 +332,7 @@
   }
 
   & > span::before {
-    content: url(" ");
+    content: "";
     background-image: url("../../images/icons/icon-gift.svg");
     display: flex;
     background-repeat: no-repeat;
@@ -293,7 +344,7 @@
       width: 150px;
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: 1440px) {
       width: 80px;
     }
   }

@@ -19,7 +19,7 @@
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 30px 0 30px;
+    padding: 0;
     column-gap: 60px;
     row-gap: 60px;
   }
@@ -69,7 +69,7 @@
     font-size: 20px;
     line-height: 24px;
     width: 135px;
-    height: 48px;
+    height: 100%;
   }
 }
 
@@ -117,19 +117,20 @@
 .catalog__card {
   display: flex;
   flex-wrap: wrap;
-  outline: 1px solid #ebebeb;
-  padding: 20px 20px 25px 20px;
+  border-bottom: 1px solid #ebebeb;
+  padding: 20px 0 25px 0;
   max-width: 320px;
   position: relative;
+  flex-grow: 1;
 
   @media (min-width: 768px) {
     width: 324px;
-    max-height: 511px;
     flex-direction: column;
     padding: 0 37px 40px 37px;
     align-items: center;
     background-image: linear-gradient(to bottom, #ffffff 16%, #f2f2f2 16%);
     outline: none;
+    height: 100%;
 
     &:nth-child(1) .catalog__card-link-image {
       max-width: 250px;
@@ -290,7 +291,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 25px 20px;
+  padding: 25px 0 25px 0;
   gap: 0;
   min-height: 208px;
   border-bottom: 1px solid #ebebeb;
@@ -333,7 +334,7 @@
   flex-direction: column;
   position: absolute;
   top: 75px;
-  left: 160px;
+  left: 139px;
 
   @media (min-width: 768px) {
     position: static;
@@ -352,7 +353,7 @@
 .catalog__characteristics-item {
   display: flex;
   justify-content: space-between;
-  min-width: 140px;
+  width: 140px;
 
   @media (min-width: 768px) {
     width: 250px;
@@ -373,7 +374,7 @@
   height: 41px;
 
   @media (min-width: 768px) {
-    height: 48px;
+    height: 100%;
     margin-bottom: 20px;
   }
 
