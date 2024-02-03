@@ -163,7 +163,7 @@
   }
 
   &::-webkit-input-placeholder {
-    color: $additional-color-text;
+    color: #444444;
     font-family: "Oswald", sans-serif;
     font-size: 16px;
     line-height: 18px;
@@ -178,7 +178,7 @@
   }
 
   &::-moz-placeholder {
-    color: $additional-color-text;
+    color: #444444;
     font-family: "Oswald", sans-serif;
     font-size: 16px;
     line-height: 18px;

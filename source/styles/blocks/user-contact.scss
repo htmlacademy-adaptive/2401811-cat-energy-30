@@ -36,7 +36,7 @@
 }
 
 .user-contact__subtitle {
-  color: $base-color-text;
+  color: #000000;
   font-size: 24px;
   line-height: 26px;
   padding-top: 22px;
@@ -159,7 +159,7 @@
   }
 
   &::-webkit-input-placeholder {
-    color: $additional-color-text;
+    color: #444444;
     font-family: "Oswald", sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -174,7 +174,7 @@
   }
 
   &::-moz-placeholder {
-    color: $additional-color-text;
+    color: #444444;
     font-family: "Oswald", sans-serif;
     font-size: 16px;
     font-style: normal;
