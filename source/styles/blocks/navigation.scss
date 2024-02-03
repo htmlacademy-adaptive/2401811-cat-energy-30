@@ -28,13 +28,38 @@
 .navigation__list {
   margin: 0;
   padding: 0;
-  display: none;
+
+  @media (max-width: 767px) {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    top: 65px;
+  }
+}
+
+.navigation__item {
+  @media (max-width: 767px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 64px;
+    border-top: 1px solid #e6e6e6;
+    align-items: center;
+
+    &:last-child {
+      border-bottom: 1px solid #e6e6e6;
+    }
+  }
 }
 
 .navigation__toggle {
   border: none;
   background-color: transparent;
   padding: 0;
+  position: absolute;
+  top: 18px;
+  left: 275px;
 }
 
 .navigation__bars {
