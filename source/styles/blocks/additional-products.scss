@@ -211,29 +211,29 @@
 
   @media (min-width: 1440px) {
     display: flex;
-    padding: 15px 0 17px 0;
+    padding: 13px 0 17px 0;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #cdcdcd;
 
     &:nth-child(1) {
-      padding: 15px 0 17px 0;
+      padding: 13px 0 17px 0;
       border-bottom: 1px solid #cdcdcd;
       border-top: 1px solid #cdcdcd;
     }
 
     &:nth-child(2) {
-      padding: 15px 0 17px 0;
+      padding: 13px 0 17px 0;
       border-bottom: 1px solid #cdcdcd;
     }
 
     &:nth-child(3) {
-      padding: 15px 0 17px 0;
+      padding: 13px 0 17px 0;
       border-bottom: 1px solid #cdcdcd;
     }
 
     &:nth-child(4) {
-      padding: 15px 0 17px 0;
+      padding: 13px 0 17px 0;
       border-bottom: 1px solid #cdcdcd;
     }
 
@@ -296,7 +296,7 @@
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/image-banner-desktop.jpg");
     align-self: flex-end;
     position: relative;
-    bottom: 4px;
+    bottom: 0;
   }
 
   & > span {

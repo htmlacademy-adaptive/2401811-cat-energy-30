@@ -13,6 +13,10 @@
     line-height: 60px;
     margin-bottom: 84px;
   }
+
+  @media (min-width: 768px) {
+    padding-left: 0;
+  }
 }
 
 @media (min-width: 768px) {
@@ -110,7 +114,7 @@
   }
 
   @media (min-width: 1440px) {
-    margin-bottom: 80px;
+    margin-bottom: 87px;
   }
 }
 
@@ -306,7 +310,7 @@
   }
 
   @media (min-width: 1440px) {
-    height: 420px;
+    height: 430px;
     padding-bottom: 0;
   }
 }
@@ -346,6 +350,7 @@
 
     @media (min-width: 1440px) {
       width: 169px;
+      margin-bottom: 34px;
     }
   }
 }
@@ -362,6 +367,7 @@
 
     @media (min-width: 1440px) {
       width: 169px;
+      height: 27px;
     }
   }
 }
