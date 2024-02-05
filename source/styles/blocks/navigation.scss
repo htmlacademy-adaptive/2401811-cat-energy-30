@@ -30,9 +30,8 @@
   padding: 0;
 
   @media (max-width: 767px) {
-    position: absolute;
     background-color: #ffffff;
-    width: 100%;
+    width: 100vw;
     left: 0;
     top: 65px;
     z-index: 100;
@@ -61,6 +60,7 @@
   position: absolute;
   top: 18px;
   left: 275px;
+  display: none;
 }
 
 .navigation__bars {

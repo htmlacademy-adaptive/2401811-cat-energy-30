@@ -90,6 +90,7 @@
   @media (min-width: 768px) {
     height: 158px;
     margin-bottom: 23px;
+    width: 178px;
   }
 
   @media (min-width: 1440px) {
@@ -126,6 +127,10 @@
   max-width: 320px;
   position: relative;
   flex-grow: 1;
+
+  &:first-child {
+    border-top: 1px solid #ebebeb;
+  }
 
   @media (min-width: 768px) {
     width: 324px;
